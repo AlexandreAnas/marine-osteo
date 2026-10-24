@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Marine Blanchet | Ostéopathe animalière à Villedieu-les-Poêles</title>
+
+<!-- Améliorations SEO & Réseaux Sociaux -->
+<meta name="description" content="Ostéopathie animale à domicile à Villedieu-les-Poêles : chevaux, chiens, chats, NAC et bovins. Parage et ferrage Duplo des chevaux et ânes.">
+<meta property="og:title" content="Marine Blanchet · Ostéopathe animalière">
+<meta property="og:description" content="Ostéopathie animale à domicile à Villedieu-les-Poêles. Parage et ferrage Duplo des chevaux et ânes.">
+<meta property="og:image" content="src/images/cheval.jpg"> <!-- Image affichée lors du partage -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+
+<!-- Favicon (petite icône dans l'onglet du navigateur) -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
+
+<style>
+:root{--o:#ee7b1f;--o2:#f9a95c;--cream:#fffaf2;--peach:#fdeedb;--ink:#4a4038;--card:#ffffff;--muted:#7d7266;--sea:#cfe0e3;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--ink);font:17px/1.6 "Nunito","Segoe UI",system-ui,sans-serif}
+h1,h2,h3{font-family:"Baloo 2","Trebuchet MS",system-ui,sans-serif;line-height:1.15;margin:0 0 .5em}
+h2{font-size:clamp(1.8rem,5vw,2.4rem)}
+a{color:inherit}
+.tel-link{display:inline-flex;align-items:center;gap:.5rem}
+nav{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1rem 5vw;position:sticky;top:env(safe-area-inset-top,0px);background:rgba(255,250,242,.96);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:2px solid var(--o2);box-shadow:0 3px 12px rgba(74,64,56,.06);z-index:5}
+nav b{color:var(--o);font-size:1.2rem}
+nav .brand{display:inline-flex;align-items:center;gap:.65rem;white-space:nowrap}
+nav .brand img{width:44px;height:44px;object-fit:contain}
+nav .nav-links{display:flex;gap:1.2rem;font-size:.95rem;flex-wrap:wrap}
+nav a{text-decoration:none;font-weight:700;transition:color 0.2s}
+nav a:hover{color:var(--o)}
+.nav-toggle{display:none}
+
+.intro{max-width:900px;margin:auto;padding:3.5rem 5vw 2rem;text-align:center}
+.intro h1{font-size:clamp(2rem,6vw,3.2rem);max-width:20ch;margin:0 auto .6em;color:var(--ink)}
+.intro p{max-width:58ch;margin:0 auto 1.5rem;font-size:1.1rem}
+
+/* Effets dynamiques sur les boutons et les cartes */
+.btn{display:inline-block;background:#fff;color:#c4560a;padding:.8rem 1.6rem;border-radius:99px;font-weight:800;text-decoration:none;box-shadow:0 12px 20px rgba(94,52,11,.12);transition:transform 0.2s ease, box-shadow 0.2s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 25px rgba(94,52,11,.2)}
+.card{background:var(--card);border-radius:28px 28px 28px 8px;padding:1.4rem;text-align:center;box-shadow:0 4px 0 var(--o2);transition:transform 0.2s ease}
+.card:hover{transform:translateY(-4px)}
+
+.wave{display:block;width:100%;height:60px;margin-top:-1px}
+section{padding:3rem 5vw;max-width:1000px;margin:auto}
+.band{background:var(--peach);max-width:none}
+.band>div{max-width:1000px;margin:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1rem}
+.pricing-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem;margin-top:1.5rem;align-items:start}
+.pricing-group h3{margin-bottom:.8rem;color:var(--ink);font-size:1.35rem}
+.price-table{width:100%;border-collapse:collapse;background:var(--card);border-top:3px solid var(--o);box-shadow:0 4px 0 var(--o2)}
+.price-table th,.price-table td{padding:.9rem 1rem;border-bottom:1px solid rgba(74,64,56,.12)}
+.price-table th{text-align:left;font-weight:700}
+.price-table td{text-align:right;white-space:nowrap;color:#b94e08;font-size:1.15rem;font-weight:800}
+.price-table tr:last-child th,.price-table tr:last-child td{border-bottom:0}
+.pricing-note{display:grid;gap:.45rem;margin-top:.8rem;padding:1rem 1.2rem;background:var(--peach);border-left:4px solid var(--o);color:var(--ink);font-size:.95rem}
+.pricing-note p{margin:0}
+
+.card span{font-size:2.4rem;display:block}
+.card h3{color:var(--o);font-size:1.3rem}
+.price{font-size:2rem;font-weight:800;color:var(--o);font-family:"Baloo 2",system-ui,sans-serif}
+.price small{font-size:.9rem;color:var(--muted);font-weight:600}
+ul.ok{padding-left:1.2rem}
+.note{color:var(--muted);font-size:.95rem}
+.badge{display:inline-block;padding:.35rem .75rem;margin:0 auto 1rem;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.16);color:#fff;font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;position:relative;z-index:1}
+
+.gmap{position:relative;margin-top:1rem;border-radius:28px;overflow:hidden;background:var(--card);height:380px;box-shadow:0 4px 0 var(--o2)}
+.gmap .fallback{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:1rem;margin:0;color:var(--muted)}
+.gmap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+.step-grid,.testimonial-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.step-grid .card,.testimonial,.contact-card{padding:1.3rem}
+.step-icon{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;background:rgba(238,123,31,.12);color:var(--o);font-weight:800;margin-bottom:.8rem}
+
+/* Section À propos */
+.about-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;align-items:center}
+.about-img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:30px 30px 10px 30px;box-shadow:0 8px 20px rgba(0,0,0,0.1)}
+
+.testimonial{background:var(--card);border-radius:22px;box-shadow:0 4px 0 var(--o2);padding:1.5rem;text-align:left;transition:transform 0.2s ease}
+.testimonial:hover{transform:translateY(-4px)}
+.testimonial strong{display:block;margin-bottom:.45rem;color:var(--o)}
+.stars{color:#f9a95c;margin-bottom:0.5rem;display:block}
+
+.faq{display:grid;gap:.8rem;margin-top:1rem}
+.faq details{background:var(--card);border-radius:18px;padding:0 1rem;box-shadow:0 4px 0 var(--o2);transition:box-shadow 0.2s}
+.faq details:hover{box-shadow:0 6px 0 var(--o2)}
+.faq summary{list-style:none;cursor:pointer;padding:1rem 0;font-weight:800}
+.faq summary::-webkit-details-marker{display:none}
+.faq p{margin:0 0 1rem;color:var(--muted)}
+
+.contact-wrapper{display:flex;justify-content:center;margin-top:1rem}
+.contact-card{background:var(--card);border-radius:28px;box-shadow:0 4px 0 var(--o2);text-align:center;max-width:450px;width:100%;padding:2rem}
+.contact-card p{margin:.4rem 0 1.5rem}
+.contact-links{display:grid;gap:.8rem;justify-items:center}
+.contact-links a{display:inline-flex;align-items:center;gap:.6rem;text-decoration:none;font-weight:700;transition:opacity 0.2s}
+.contact-links a:hover{opacity:0.8}
+.cta-row{display:flex;justify-content:center;gap:.8rem;margin-top:2rem}
+
+.whatsapp-float{position:fixed;right:18px;bottom:22px;display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.8rem 1rem;background:#25d366;color:#fff;border-radius:999px;text-decoration:none;font-weight:800;box-shadow:0 10px 25px rgba(37,211,102,.32);z-index:20;transition:transform 0.2s}
+.whatsapp-float:hover{transform:scale(1.05)}
+
+footer{background:var(--o);color:#fff;text-align:center;padding:2.5rem 5vw;line-height:2}
+footer a{color:#fff;text-decoration:underline;margin:0 10px}
+footer a:hover{opacity:0.8}
+
+@media (max-width: 760px){
+  nav{padding:0.9rem 5vw;align-items:flex-start;flex-wrap:wrap}
+  nav b{font-size:1.05rem}
+  .nav-toggle{display:inline-flex;align-items:center;justify-content:center;width:2.5rem;height:2.5rem;border:1px solid rgba(74,64,56,.12);border-radius:12px;background:#fff;color:var(--ink);font-size:1.2rem;cursor:pointer}
+  .nav-links{display:none;width:100%;flex-direction:column;gap:.75rem;padding-top:.5rem;font-size:1rem}
+  .nav-links.open{display:flex}
+  .nav-links a{padding:.3rem 0}
+  .pricing-groups{grid-template-columns:1fr;gap:1.5rem}
+  .price-table th,.price-table td{padding:.8rem .75rem}
+}
+</style>
+</head>
+<body>
+<nav>
+  <b class="brand"><img src="src/images/Logo/Marine%20Blanchet_Logo%20vectoris%C3%A9%20couleur.png" alt=""><span>Marine Blanchet</span></b>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Ouvrir le menu">☰</button>
+  <div class="nav-links" id="navLinks">
+    <a href="#osteo">L'ostéo animale</a>
+    <a href="#marechalerie">Maréchalerie</a>
+    <a href="#animaux">Animaux</a>
+    <a href="#apropos">Qui suis-je ?</a>
+    <a href="#tarifs">Tarifs</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="intro">
+<h1>J’accompagne vos animaux tout au long de leur vie</h1>
+<p>Ostéopathie animale à domicile pour les chevaux, chats, chiens, NAC et bovins. Parage et ferrage* des ânes et des chevaux à Villedieu-les-Poêles et dans les environs.</p>
+<a class="btn" href="#contact">Prendre rendez-vous</a>
+</header>
+
+<section id="osteo">
+<h2>Qu'est-ce que l'ostéopathie animale ?</h2>
+<p>C’est une pratique visant à relâcher les tensions du corps de votre animal pour l’aider à retrouver du confort et une mobilité optimale.</p>
+<p class="note">Une consultation d’ostéopathie ne remplace pas un suivi vétérinaire.</p>
+</section>
+
+<section id="marechalerie">
+<h2>Maréchalerie : parage et ferrure</h2>
+<p>Je propose également un suivi maréchalerie pour vos équidés.</p>
+<div class="grid">
+<div class="card"><h3>Parage</h3><p>Initiation et suivi régulier. Je propose également de la rééducation pour les chevaux ayant eu des expériences négatives.</p></div>
+<div class="card"><h3>Ferrage</h3><p>Ferrage uniquement en Duplo pour le moment.</p></div>
+</div>
+<p class="note">Un parage est à prévoir toutes les 8 semaines maximum. Au-delà, une majoration tarifaire s’applique.</p>
+</section>
+
+<section id="apropos">
+  <h2>Qui suis-je ?</h2>
+  <p>Cavalière depuis mes 3 ans et entourée d’animaux depuis le berceau, je me suis naturellement orientée vers un métier aidant la condition animale. J’ai à cœur d’aider vos animaux en leur permettant de mieux vieillir.</p>
+</section>
+
+<section class="band" id="animaux"><div>
+<h2>Qui je soigne</h2>
+<div class="grid">
+<!-- Ajout de loading="lazy" sur toutes les images -->
+<div class="card"><img src="src/images/chien.jpg" alt="Chien suivi en ostéopathie animale" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:18px 18px 10px 10px;display:block;margin-bottom:1rem"><h3>Chiens</h3><p>Sportifs, seniors, chiots</p></div>
+<div class="card"><img src="src/images/chat.jpg" alt="Chat suivi en ostéopathie animale" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:18px 18px 10px 10px;display:block;margin-bottom:1rem"><h3>Chats</h3><p>Douceur et patience</p></div>
+<div class="card"><img src="src/images/cheval.jpg" alt="Cheval accompagné en ostéopathie et maréchalerie" loading="lazy" style="width:100%;height:180px;object-fit:cover;object-position:43% 38%;border-radius:18px 18px 10px 10px;display:block;margin-bottom:1rem"><h3>Chevaux</h3><p>Ostéo, parage et ferrage</p></div>
+<div class="card"><img src="src/images/lapin.jpg" alt="Lapin, animal de compagnie suivi en ostéopathie" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:18px 18px 10px 10px;display:block;margin-bottom:1rem"><h3>NAC</h3><p>Lapins, cobayes, furets…</p></div>
+<div class="card"><img src="src/images/vache.jpg" alt="Bovin suivi en ostéopathie animale" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:18px 18px 10px 10px;display:block;margin-bottom:1rem"><h3>Vaches</h3><p>Élevages et particuliers</p></div>
+</div>
+</div></section>
+
+<section class="band"><div>
+<h2>Pourquoi choisir une approche complète pour votre animal ?</h2>
+<div class="step-grid">
+<div class="card"><div class="step-icon">1</div><h3>Écoute</h3><p>Je prends le temps d’observer le comportement, la posture et la mobilité de votre animal.</p></div>
+<div class="card"><div class="step-icon">2</div><h3>Analyse</h3><p>Je repère les tensions et les blocages qui peuvent gêner le confort et le bon fonctionnement.</p></div>
+<div class="card"><div class="step-icon">3</div><h3>Suivi</h3><p>Je vous guide avec des conseils adaptés pour préserver le bien-être de votre animal au quotidien.</p></div>
+</div>
+</div></section>
+
+<!-- NOUVELLE SECTION AVIS CLIENTS -->
+
+<section>
+<h2>Questions fréquentes</h2>
+<div class="faq">
+<details open>
+<summary>Quels animaux pouvez-vous prendre en charge ?</summary>
+<p>Je soigne les chiens, chats, chevaux, NAC et bovins, selon les cas et les besoins de chacun.</p>
+</details>
+<details>
+<summary>Quand faut-il consulter un ostéopathe animal ?</summary>
+<p>Quand votre animal montre une gêne de mobilité, un changement de comportement, une raideur, une boiterie ou après un traumatisme.</p>
+</details>
+<details>
+<summary>L’ostéopathie remplace-t-elle le suivi vétérinaire ?</summary>
+<p>Non. L’ostéopathie est un complément utile, mais elle ne remplace pas le suivi vétérinaire ni les soins médicaux nécessaires.</p>
+</details>
+<details>
+<summary>Quels sont les délais de rendez-vous ?</summary>
+<p>Le délai varie selon la saison et les demandes, mais il est souvent possible d’obtenir un créneau rapide selon la zone d’intervention.</p>
+</details>
+</div>
+</section>
+
+<section id="tarifs">
+<h2>Tarifs</h2>
+<div class="pricing-groups">
+<div class="pricing-group">
+<h3>Ostéopathie animale</h3>
+<table class="price-table">
+<tbody>
+<tr><th scope="row">Cheval</th><td>80 €</td></tr>
+<tr><th scope="row">Chien</th><td>50 €</td></tr>
+<tr><th scope="row">Chat</th><td>50 €</td></tr>
+<tr><th scope="row">NAC</th><td>40 €</td></tr>
+<tr><th scope="row">Vache</th><td>40 €</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pricing-group">
+<h3>Maréchalerie</h3>
+<table class="price-table">
+<tbody>
+<tr><th scope="row">Parage</th><td>50 €</td></tr>
+<tr><th scope="row">Initiation au parage</th><td>30 €</td></tr>
+<tr><th scope="row">Ferrage Duplo</th><td>70 €</td></tr>
+</tbody>
+</table>
+<div class="pricing-note">
+<p><strong>Fers non fournis :</strong> le propriétaire doit les acheter, car leurs dimensions doivent être prises au préalable.</p>
+<p><strong>Fréquence du parage :</strong> toutes les 8 semaines maximum. Au-delà, une majoration tarifaire s’applique.</p>
+</div>
+</div>
+</div>
+<p class="note">Frais de déplacement en supplément selon la distance.</p>
+</section>
+
+<svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" style="background:var(--cream)"><path d="M0 60V30C240 -10 480 60 720 30S1200 -10 1440 30V60Z" fill="var(--peach)"/></svg>
+<section class="band" id="zone" style="margin-top:-1px"><div>
+<h2>Zone d'intervention</h2>
+<p>Je me déplace à <b>Villedieu-les-Poêles et dans un rayon de 50 km</b> autour. Des frais de déplacement sont appliqués selon la distance : contactez-moi pour un devis précis.</p>
+<div class="gmap">
+<p class="fallback">La carte ne s'affiche pas ici ? <a href="https://www.google.com/maps/search/?api=1&query=Villedieu-les-Poêles" target="_blank" rel="noopener">Ouvrir dans Google Maps</a></p>
+<iframe title="Carte Google Maps : Villedieu-les-Poêles" src="https://www.google.com/maps?q=Villedieu-les-Poêles,+France&z=9&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+</div>
+<p class="note">Rayon d'intervention : 50 km autour de Villedieu-les-Poêles. <a href="https://www.google.com/maps/search/?api=1&query=Villedieu-les-Poêles" target="_blank" rel="noopener">Voir sur Google Maps</a></p>
+</div></section>
+
+<section id="contact">
+<h2 style="text-align: center;">Prendre rendez-vous</h2>
+<div class="contact-wrapper">
+  <div class="contact-card">
+    <p>Un renseignement, une question ou besoin d'un rendez-vous pour votre animal ? Appelez-moi directement.</p>
+    <div class="contact-links">
+      <a class="tel-link" href="tel:0633718769">📞 <b>06 33 71 87 69</b></a>
+      <a href="https://maps.google.com/?q=Villedieu-les-Poêles%2050" target="_blank" rel="noopener">📍 <b>Villedieu-les-Poêles (50)</b></a>
+    </div>
+    <div class="cta-row">
+      <a class="btn" href="tel:0633718769">Appeler maintenant</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<footer>
+  <b>Marine Blanchet</b> · Ostéopathe animalière · Maréchale-ferrante<br>
+  <a href="mentions-legales.html">Mentions légales</a><br>
+  <small>Réf. OA2045 · © 2026</small>
+</footer>
+<a class="whatsapp-float" href="https://wa.me/33633718769?text=Bonjour%20Marine%2C%20je%20souhaite%20prendre%20rendez-vous%20pour%20mon%20animal." target="_blank" rel="noopener">WhatsApp</a>
+
+<script>
+(function(){
+  // Gestion du menu mobile
+  var navToggle = document.querySelector('.nav-toggle');
+  var navLinks = document.getElementById('navLinks');
+  
+  if (navToggle && navLinks) {
+    // Ouvrir/Fermer au clic sur le bouton
+    navToggle.addEventListener('click', function (event) {
+      event.stopPropagation(); // Évite que le clic ne se propage au document
+      var isOpen = navLinks.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', String(isOpen));
+      navToggle.textContent = isOpen ? '✕' : '☰';
+    });
+
+    // Fermer le menu au clic sur un lien
+    navLinks.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        navLinks.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.textContent = '☰';
+      });
+    });
+
+    // Amélioration : Fermer le menu si l'on clique en dehors
+    document.addEventListener('click', function(event) {
+      if (navLinks.classList.contains('open') && !navLinks.contains(event.target)) {
+        navLinks.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.textContent = '☰';
+      }
+    });
+  }
+})();
+</script>
+</body>
+</html>
