@@ -111,7 +111,7 @@ footer a:hover{opacity:0.8}
   nav{padding:0.9rem 5vw;align-items:flex-start;flex-wrap:wrap}
   nav b{font-size:1.05rem}
   .nav-toggle{display:inline-flex;align-items:center;justify-content:center;width:2.5rem;height:2.5rem;border:1px solid rgba(74,64,56,.12);border-radius:12px;background:#fff;color:var(--ink);font-size:1.2rem;cursor:pointer}
-  .nav-links{display:none;width:100%;flex-direction:column;gap:.75rem;padding-top:.5rem;font-size:1rem}
+  nav .nav-links{display:none;width:100%;flex-direction:column;gap:.75rem;padding-top:.5rem;font-size:1rem}
   .nav-links.open{display:flex}
   .nav-links a{padding:.3rem 0}
   .pricing-groups{grid-template-columns:1fr;gap:1.5rem}
@@ -166,9 +166,9 @@ footer a:hover{opacity:0.8}
 <!-- Ajout de loading="lazy" sur toutes les images -->
 <div class="card"><img src="src/images/chien.jpg" alt="Chien suivi en ostéopathie animale" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:18px 18px 10px 10px;display:block;margin-bottom:1rem"><h3>Chiens</h3><p>Sportifs, seniors, chiots</p></div>
 <div class="card"><img src="src/images/chat.jpg" alt="Chat suivi en ostéopathie animale" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:18px 18px 10px 10px;display:block;margin-bottom:1rem"><h3>Chats</h3><p>Douceur et patience</p></div>
-<div class="card"><img src="src/images/cheval.jpg" alt="Cheval accompagné en ostéopathie et maréchalerie" loading="lazy" style="width:100%;height:180px;object-fit:cover;object-position:43% 38%;border-radius:18px 18px 10px 10px;display:block;margin-bottom:1rem"><h3>Chevaux</h3><p>Ostéo, parage et ferrage</p></div>
+<div class="card"><img src="src/images/cheval.jpg" alt="Équidé accompagné en ostéopathie et maréchalerie" loading="lazy" style="width:100%;height:180px;object-fit:cover;object-position:43% 38%;border-radius:18px 18px 10px 10px;display:block;margin-bottom:1rem"><h3>Équidés</h3><p>Ostéo, parage et ferrage</p></div>
 <div class="card"><img src="src/images/lapin.jpg" alt="Lapin, animal de compagnie suivi en ostéopathie" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:18px 18px 10px 10px;display:block;margin-bottom:1rem"><h3>NAC</h3><p>Lapins, cobayes, furets…</p></div>
-<div class="card"><img src="src/images/vache.jpg" alt="Bovin suivi en ostéopathie animale" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:18px 18px 10px 10px;display:block;margin-bottom:1rem"><h3>Vaches</h3><p>Élevages et particuliers</p></div>
+<div class="card"><img src="src/images/vache.jpg" alt="Bovin suivi en ostéopathie animale" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:18px 18px 10px 10px;display:block;margin-bottom:1rem"><h3>Bovins</h3><p>Élevages et particuliers</p></div>
 </div>
 </div></section>
 
@@ -176,7 +176,7 @@ footer a:hover{opacity:0.8}
 <h2>Pourquoi choisir une approche complète pour votre animal ?</h2>
 <div class="step-grid">
 <div class="card"><div class="step-icon">1</div><h3>Écoute</h3><p>Je prends le temps d’observer le comportement, la posture et la mobilité de votre animal.</p></div>
-<div class="card"><div class="step-icon">2</div><h3>Analyse</h3><p>Je repère les tensions et les blocages qui peuvent gêner le confort et le bon fonctionnement.</p></div>
+<div class="card"><div class="step-icon">2</div><h3>Analyse</h3><p>Je repère les dysfonctions du corps qui peuvent gêner le confort et le bon fonctionnement.</p></div>
 <div class="card"><div class="step-icon">3</div><h3>Suivi</h3><p>Je vous guide avec des conseils adaptés pour préserver le bien-être de votre animal au quotidien.</p></div>
 </div>
 </div></section>
@@ -188,17 +188,17 @@ footer a:hover{opacity:0.8}
 <div class="faq">
 <details open>
 <summary>Quels animaux pouvez-vous prendre en charge ?</summary>
-<p>Je soigne les chiens, chats, chevaux, NAC et bovins, selon les cas et les besoins de chacun.</p>
+<p>Je soigne les chiens, chats, équidés, NAC et bovins, selon les cas et les besoins de chacun.</p>
 </details>
-<details>
+<details open>
 <summary>Quand faut-il consulter un ostéopathe animal ?</summary>
-<p>Quand votre animal montre une gêne de mobilité, un changement de comportement, une raideur, une boiterie ou après un traumatisme.</p>
+<p>Quand votre animal montre une gêne de mobilité, un changement de comportement, une raideur, une irrégularité ou après un traumatisme.</p>
 </details>
-<details>
+<details open>
 <summary>L’ostéopathie remplace-t-elle le suivi vétérinaire ?</summary>
 <p>Non. L’ostéopathie est un complément utile, mais elle ne remplace pas le suivi vétérinaire ni les soins médicaux nécessaires.</p>
 </details>
-<details>
+<details open>
 <summary>Quels sont les délais de rendez-vous ?</summary>
 <p>Le délai varie selon la saison et les demandes, mais il est souvent possible d’obtenir un créneau rapide selon la zone d’intervention.</p>
 </details>
@@ -216,7 +216,7 @@ footer a:hover{opacity:0.8}
 <tr><th scope="row">Chien</th><td>50 €</td></tr>
 <tr><th scope="row">Chat</th><td>50 €</td></tr>
 <tr><th scope="row">NAC</th><td>40 €</td></tr>
-<tr><th scope="row">Vache</th><td>40 €</td></tr>
+<tr><th scope="row">Vache</th><td>60 €</td></tr>
 </tbody>
 </table>
 </div>
@@ -224,14 +224,14 @@ footer a:hover{opacity:0.8}
 <h3>Maréchalerie</h3>
 <table class="price-table">
 <tbody>
-<tr><th scope="row">Parage</th><td>50 €</td></tr>
+<tr><th scope="row">Parage</th><td>40 €</td></tr>
 <tr><th scope="row">Initiation au parage</th><td>30 €</td></tr>
 <tr><th scope="row">Ferrage Duplo</th><td>70 €</td></tr>
 </tbody>
 </table>
 <div class="pricing-note">
 <p><strong>Fers non fournis :</strong> le propriétaire doit les acheter, car leurs dimensions doivent être prises au préalable.</p>
-<p><strong>Fréquence du parage :</strong> toutes les 8 semaines maximum. Au-delà, une majoration tarifaire s’applique.</p>
+<p><strong>Fréquence du parage :</strong> toutes les 8 semaines maximum. Au-delà, le tarif passe à 60 €.</p>
 </div>
 </div>
 </div>
